@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+@import "tailwindcss";
+
+
+
+@theme {
+  --font-barlow: 'Barlow Condensed' , sans-serif;
+  --font-bellefair: 'Bellefair', sans-serif;
+  --color-blue-dark: #0b0d17;
+  --color-blue-light: #d0d6f9;
+  --color-white: #ffffff;
+  --color-nav: #0B0D17
+  
+}
+/* BACKGROUND IMAGES */
+
+.bg-home{
+  @apply bg-[url(/assets/home/background-home-mobile.jpg)] sm:bg-[url(/assets/home/background-home-tablet.jpg)]  md:bg-[url(/assets/home/background-home-desktop.jpg)]
+}
+
+.bg-destination{
+  @apply bg-[url(/assets/destination/background-destination-mobile.jpg)] sm:bg-[url(/assets/destination/background-destination-tablet.jpg)] md:bg-[url(/assets/destination/background-destination-desktop.jpg)]
+}
+
+.bg-crew{
+  @apply  bg-[url(/assets/crew/background-crew-mobile.jpg)] sm:bg-[url(/assets/crew/background-crew-tablet.jpg)] md:bg-[url(/assets/crew/background-crew-desktop.jpg)]
+}
+
+.bg-tech{
+  @apply   bg-[url(/assets/technology/background-technology-mobile.jpg)] sm:bg-[url(/assets/technology/background-technology-tablet.jpg)]  md:bg-[url(/assets/technology/background-technology-desktop.jpg)]
+}
+
+
+/* WEB TEXTS */
+
+.text-1{
+  @apply  text-7xl md:text-9xl font-bellefair font-normal  text-white uppercase
+}
+
+.text-2{
+  @apply  text-6xl md:text-8xl font-bellefair font-normal text-white uppercase
+}
+
+.text-3{
+  @apply  text-3xl md:text-5xl font-bellefair font-normal text-white uppercase
+}
+
+.text-4{
+  @apply  text-2xl md:text-4xl font-bellefair font-normal  uppercase
+}
+
+.text-5{
+  @apply  text-xl md:text-3xl font-barlow font-normal  text-white uppercase
+}
+
+.text-5b{
+  @apply  text-xl md:text-3xl font-barlow font-semibold  text-blue-light uppercase
+}
+
+.text-6{
+  @apply  text-xl md:text-3xl font-bellefair font-normal text-white uppercase
+}
+
+.text-6b{
+  @apply  text-xl md:text-3xl font-bellefair font-normal text-blue-light uppercase
+}
+
+.text-7{
+  @apply  text-xs md:text-sm font-barlow font-normal text-white uppercase
+}
+
+.text-8{
+  @apply  text-sm md:text-base font-barlow font-normal text-white uppercase
+}
+
+.text-9{
+  @apply  text-base md:text-lg font-barlow font-normal text-white
+}
+
+
+/* MAIN SCREEN */
+
+main {
+  @apply  md:h-screen w-screen max-w-full
+}
+
+/* NAVIGATION SECTION */
+  .nav-section{
+    @apply  absolute top-0 left-0 z-50 md:py-8 md:pl-8   py-4  flex flex-row justify-between items-center w-full 
+  }
+
+  .nav-links{
+    @apply hidden md:block md:flex flex-row gap-12 px-8 bg-nav opacity-60 backdrop-blur  h-20
+
+  }
+
+
+
+  .nav-links button {
+    @apply uppercase text-base font-barlow text-white font-normal cursor-pointer border-b-2 border-transparent h-full flex items-end pb-6 gap-2    ;
+
+  }
+
+  .nav-links-mobile{
+    @apply flex flex-col px-4 py-8 gap-8 bg-nav  opacity-95  backdrop-blur h-screen md:hidden w-1/2 transition-transform duration-300 ease-in-out;
+  
+  }
+
+  .nav-links button.active,   .nav-links-mobile button.active{
+    @apply border-white;
+  }
+
+  .nav-links-mobile button{
+    @apply uppercase text-base font-barlow text-white font-normal cursor-pointer w-full pr-14 border-r-2 border-transparent h-full flex items-end gap-2    ;
+
+  }
+
+
+
+ 
+
+  .nav-links span{
+@apply font-semibold
+  }
+
+  .body{
+    @apply relative w-full h-full p-8
+  }
+
+/* HOME SECTION */
+
+.home{
+  @apply flex flex-col  md:flex-row items-center justify-evenly px-8 md:px-20 pt-20 md:pt-50 gap-8 transition-transform duration-300 ease-in-out h-screen md:h-full;
+}
+
+.home-left{
+  @apply  w-full text-center md:text-start md:w-1/2 flex flex-col gap-4
+}
+
+.home-right{
+  @apply w-full md:w-1/2 flex items-center justify-center
+}
+
+.explore-btn{
+  @apply bg-white rounded-full w-40 h-40  md:w-48 md:h-48 cursor-pointer hover:shadow-[0_0_15px_10px_rgba(255,255,255,0.7)] transition-all duration-300
+}
+
+/* DESTINATION */
+
+.destination {
+  @apply flex flex-col md:px-20 pt-12 md:pt-24 transition-transform duration-300 ease-in-out h-screen md:h-full;
+}
+
+.destination-details{
+  @apply flex flex-col md:flex-row items-center justify-between pt-8 
+}
+
+.destination-tabs{
+  @apply flex flex-row gap-5 pb-4 md:pb-14 items-center justify-center md:items-start md:justify-start
+}
+
+.destination-tabs button{
+  @apply  uppercase  text-sm md:text-base font-barlow text-white font-normal cursor-pointer border-b border-transparent
+}
+
+.destination-tabs button.destination-btn-active{
+  @apply border-white border-b-2
+}
+
+.destination-img{
+  @apply w-1/2 flex items-center
+}
+
+.destination-img img{
+  @apply md:w-90 pb-4 md:pb-0
+}
+
+.destination-content{
+  @apply w-full md:w-1/2 md:gap-6 gap-4
+}
+
+
+/* CREW SECTION */
+
+.crew{
+  @apply flex flex-col  md:px-20 pt-12 md:pt-24  items-center md:items-start transition-transform duration-300 ease-in-out h-screen md:h-full;
+}
+
+.dot-tab{
+  @apply flex flex-row gap-4 
+}
+.dot-btn{
+  @apply bg-blue-light h-4 w-4 rounded-full border-none cursor-pointer
+}
+
+.dot-btn.dot-btn-active{
+  @apply bg-white
+}
+
+/* TECHNOLOGY SECTION */
+
+.tech{
+  @apply flex flex-col px-0 pt-12 md:px-20 md:pt-24 items-center md:items-start transition-transform duration-300 ease-in-out h-screen md:h-full;
+
+}
+
+.number-btn{
+  @apply flex flex-row md:flex-col justify-evenly flex-1 gap-4 order-2 md:order-1
+}
+
+.number-btn button{
+  @apply border-1  border-white  h-10 w-10 md:h-12 md:w-12 rounded-full bg-transparent cursor-pointer font-bellefair text-white
+}
+
+.number-btn button.btn-active{
+  @apply bg-white text-blue-dark
+}
