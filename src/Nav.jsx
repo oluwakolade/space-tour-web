@@ -43,7 +43,7 @@ const Nav = ({ activeTab, setActiveTab }) => {
 
       {isOpen && (
         <ul className="nav-links-mobile  fixed  top-0 right-0 z-40 pr-8">
-          <li className="flex ml-52 w-full items-end justify-end cursor-pointer">
+          <li className="flex w-full items-end justify-end cursor-pointer">
             <button onClick={() => setIsOpen(false)}>
               <img src="assets/shared/icon-close.svg" alt="close icon" />
             </button>

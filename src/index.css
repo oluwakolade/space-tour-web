@@ -130,7 +130,7 @@ main {
 /* HOME SECTION */
 
 .home{
-  @apply flex flex-col  md:flex-row items-center justify-evenly px-8 md:px-20 pt-20 md:pt-50 gap-8 transition-transform duration-300 ease-in-out h-screen md:h-full;
+  @apply flex flex-col  md:flex-row items-center justify-evenly px-8 md:px-20 pt-12 md:pt-50 gap-8 transition-transform duration-300 ease-in-out h-screen md:h-full;
 }
 
 .home-left{
