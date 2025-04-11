@@ -15,19 +15,19 @@
 /* BACKGROUND IMAGES */
 
 .bg-home{
-  @apply bg-[url(/assets/home/background-home-mobile.jpg)] sm:bg-[url(/assets/home/background-home-tablet.jpg)]  md:bg-[url(/assets/home/background-home-desktop.jpg)]
+  @apply bg-[url(/assets/home/background-home-mobile.jpg)] sm:bg-[url(/assets/home/background-home-tablet.jpg)]  lg:bg-[url(/assets/home/background-home-desktop.jpg)]
 }
 
 .bg-destination{
-  @apply bg-[url(/assets/destination/background-destination-mobile.jpg)] sm:bg-[url(/assets/destination/background-destination-tablet.jpg)] md:bg-[url(/assets/destination/background-destination-desktop.jpg)]
+  @apply bg-[url(/assets/destination/background-destination-mobile.jpg)] sm:bg-[url(/assets/destination/background-destination-tablet.jpg)] lg:bg-[url(/assets/destination/background-destination-desktop.jpg)]
 }
 
 .bg-crew{
-  @apply  bg-[url(/assets/crew/background-crew-mobile.jpg)] sm:bg-[url(/assets/crew/background-crew-tablet.jpg)] md:bg-[url(/assets/crew/background-crew-desktop.jpg)]
+  @apply  bg-[url(/assets/crew/background-crew-mobile.jpg)] sm:bg-[url(/assets/crew/background-crew-tablet.jpg)] lg:bg-[url(/assets/crew/background-crew-desktop.jpg)]
 }
 
 .bg-tech{
-  @apply   bg-[url(/assets/technology/background-technology-mobile.jpg)] sm:bg-[url(/assets/technology/background-technology-tablet.jpg)]  md:bg-[url(/assets/technology/background-technology-desktop.jpg)]
+  @apply   bg-[url(/assets/technology/background-technology-mobile.jpg)] sm:bg-[url(/assets/technology/background-technology-tablet.jpg)]  lg:bg-[url(/assets/technology/background-technology-desktop.jpg)]
 }
 
 
