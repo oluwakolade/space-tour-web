@@ -106,11 +106,11 @@ main {
   
   }
 
-  .nav-links button.active,   .nav-links-mobile button.active{
+  .nav-links button.active,   .nav-links-mobile .btn button.active{
     @apply border-white;
   }
 
-  .nav-links-mobile button{
+  .nav-links-mobile .btn button{
     @apply uppercase text-base font-barlow text-white font-normal cursor-pointer w-full pr-14 border-r-2 border-transparent h-full flex items-end gap-2    ;
 
   }
